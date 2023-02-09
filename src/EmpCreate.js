@@ -44,7 +44,7 @@ const EmpCreate = () => {
                             </div>
                             <div className="card-body">
 
-                                <div className="row">
+                                <div className="row" style={{"margin" : "1rem"}}>
 
                                     <div className="col-lg-12">
                                         <div className="form-group">

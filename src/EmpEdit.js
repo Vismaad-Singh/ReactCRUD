@@ -61,20 +61,20 @@ const EmpEdit = () => {
 
             <div className="card" style={{"textAlign":"left"}}>
                 <div className="card-title">
-                    <h2>Edit Employee Details</h2>
+                    <h2>Edit Employee Details</h2><hr/>
                 </div>
-                <div className="card-body">
+                <div className="card-body" style={{"margin" : "0.7rem"}}>
 
                     <div className="row">
 
-                        <div className="col-lg-12">
+                        <div className="col-lg-12" style={{"margin" : "0.3rem"}}>
                             <div className="form-group">
                                 <label>ID</label>
                                 <input value={id} disabled="disabled" className="form-control"></input>
                             </div>
                         </div>
 
-                        <div className="col-lg-12">
+                        <div className="col-lg-12" style={{"margin" : "0.3rem"}}>
                             <div className="form-group">
                                 <label>Name</label>
                                 <input required value={name} onMouseDown={e=>valchange(true)} onChange={e=>namechange(e.target.value)} className="form-control"></input>
@@ -82,28 +82,28 @@ const EmpEdit = () => {
                             </div>
                         </div>
 
-                        <div className="col-lg-12">
+                        <div className="col-lg-12" style={{"margin" : "0.3rem"}}>
                             <div className="form-group">
                                 <label>Email</label>
                                 <input value={email} onChange={e=>emailchange(e.target.value)} className="form-control"></input>
                             </div>
                         </div>
 
-                        <div className="col-lg-12">
+                        <div className="col-lg-12" style={{"margin" : "0.3rem"}}>
                             <div className="form-group">
                                 <label>Phone</label>
                                 <input value={phone} onChange={e=>phonechange(e.target.value)} className="form-control"></input>
                             </div>
                         </div>
 
-                        <div className="col-lg-12">
+                        <div className="col-lg-12" style={{"margin" : "0.3rem"}}>
                             <div className="form-check">
                             <input checked={active} onChange={e=>activechange(e.target.checked)} type="checkbox" className="form-check-input"></input>
                                 <label  className="form-check-label">Is Active</label>
                                 
                             </div>
                         </div>
-                        <div className="col-lg-12">
+                        <div className="col-lg-12" style={{"margin" : "0.3rem"}}>
                             <div className="form-group">
                                <button className="btn btn-success" type="submit">Save</button>
                                <Link to="/" className="btn btn-danger">Back</Link>
